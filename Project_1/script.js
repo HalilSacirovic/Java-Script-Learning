@@ -127,3 +127,21 @@ console.log ("Mark BMI is " +bmiMark+ "%");
 console.log (bmiMark > bmiJohn)
 
 
+// ========================
+
+
+const firstNamee = "Halil";
+const birthYeara = "2003";
+const yearr = "2037";
+
+const halil = "I'm "+ firstNamee +" My Job is " + job +  " and I'm " + (yearr - birthYeara);
+console.log (halil);
+
+//==================
+
+
+// This is a method which is the  easier way to write something  like this up 
+
+
+const halilNew = `I'm ${firstNamee} my job is ${job1} and I'm  ${yearr-birthYeara}`
+console.log (halilNew)
