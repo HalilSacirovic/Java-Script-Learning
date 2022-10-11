@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.goku {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to right, #303845 ,#0f203b);
+    height: 100vh;
+}
+
+.goku-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 90px;
+    
+    
+}
+
+.goku-btn button {
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+#goku-base-form {
+    background-image: linear-gradient(to right, black ,darkblue );
+    padding: 10px;
+    color: white;
+
+}
+#goku-red-form {
+    background-image: linear-gradient(to right, aqua ,red  );
+    padding: 10px;
+    color: white;
+
+}
+#goku-blue-form {
+    background-image: linear-gradient(to right, rgb(0, 217, 255) ,rgb(5, 231, 174) );
+    padding: 10px;
+    color: white;
+
+}
+#goku-blue-kaiokenx-form {
+    background-image: linear-gradient(to right, rgb(196, 16, 58) ,rgb(9, 183, 210) );
+    padding: 10px;
+    color: white;
+
+}
+#goku-ultra-instict-form {
+    background-image: linear-gradient(to right, black , grey );
+    padding: 10px;
+    color: white;
+
+}
+#goku-mui-form {
+    background-image: linear-gradient(to right,rgb(118, 95, 199), rgb(136, 151, 203) ,rgb(69, 68, 75) );
+    padding: 10px;
+    color: white;
+
+}
+
+#gokuimg {
+    width: 700px;
+    outline-offset: 20px;
+    transition: all 0.5s;
+  
+
+}
+#gokuimg:hover {
+    outline: 10px solid rgba(5, 5, 90, 0.813);
+    transform: scale(1.05) translateY(0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(rgba (5,5,90,rgba(5, 5, 90, 0.813)), 0.5);
+    z-index: 20;
+}
