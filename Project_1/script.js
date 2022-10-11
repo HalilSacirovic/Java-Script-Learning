@@ -108,23 +108,23 @@ console.log (ageHalil, ageSarah,averageAge  );
 
 //  CHALLENGE CODE 
 
-const markWeight = 78;
-const markHeight = 1.69 ;
+// const markWeight = 78;
+// const markHeight = 1.69 ;
 
-const johnWeight =92;
-const johnHeight = 1.95;
+// const johnWeight =92;
+// const johnHeight = 1.95;
 
 
-console.log ("Mark height is", markHeight, "and his weight is "+  markWeight + "kg" );
-console.log ("John height is", johnHeight, "and his weight is " +  johnWeight + "kg" );
+// console.log ("Mark height is", markHeight, "and his weight is "+  markWeight + "kg" );
+// console.log ("John height is", johnHeight, "and his weight is " +  johnWeight + "kg" );
 
-const bmiJohn = johnWeight / johnHeight**2;
-console.log ("John BMI is "+ bmiJohn+"%");
+// const bmiJohn = johnWeight / johnHeight**2;
+// console.log ("John BMI is "+ bmiJohn+"%");
 
-const bmiMark = markWeight / markHeight**2;
-console.log ("Mark BMI is " +bmiMark+ "%");
+// const bmiMark = markWeight / markHeight**2;
+// console.log ("Mark BMI is " +bmiMark+ "%");
 
-console.log (bmiMark > bmiJohn)
+// console.log (bmiMark > bmiJohn)
 
 
 // ========================
@@ -144,4 +144,82 @@ console.log (halil);
 
 
 const halilNew = `I'm ${firstNamee} my job is ${job1} and I'm  ${yearr-birthYeara}`
-console.log (halilNew)
+console.log (halilNew);
+
+console.log (`Just a regular string ...`);
+console.log (`String with \n\ 
+multiple \n\
+`);
+
+// OR we can use just 
+
+console.log ( `String 
+multiple`);
+
+
+// =================
+
+
+// IF / ELSE STATEMENTS 
+
+const myAge = 15;
+const isOldEnough = myAge >= 18;
+
+if (isOldEnough) {
+    console.log ( "Sarah can start driving licence🚘 ")
+}
+
+else  {
+    const yearsLeft = 18 - myAge;
+    console.log (`Sarah is to young, wait another ${yearsLeft} years`)
+}
+
+
+const birthYear2 = 2003 ;
+
+
+let century;
+if ( birthYear2 <= 2000) {
+
+ century = 20;
+}
+
+else {
+century =21;
+}
+
+console.log (century);
+
+
+// ====
+
+
+const markWeight = 78;
+const markHeight = 1.69 ;
+
+const johnWeight =92;
+const johnHeight = 1.95;
+
+
+console.log ("Mark height is", markHeight, "and his weight is "+  markWeight + "kg" );
+console.log ("John height is", johnHeight, "and his weight is " +  johnWeight + "kg" );
+
+const bmiJohn = johnWeight / johnHeight**2;
+console.log ("John BMI is "+ bmiJohn+"%");
+
+const bmiMark = markWeight / markHeight**2;
+console.log ("Mark BMI is " +bmiMark+ "%");
+
+console.log (bmiMark > bmiJohn);
+
+
+if ( bmiJohn >= bmiMark) {
+   console.log ( `John's BMI is ${bmiJohn} which is higher than Mark's BMI,which is ${bmiMark}`)
+}
+
+else {
+   console.log ( `Mark's BMI is ${bmiMark} which is higher than John's BMI,which is ${bmiJohn}`)
+}
+
+
+// I solved This Challenge without help or anything like that so I know how it works 
