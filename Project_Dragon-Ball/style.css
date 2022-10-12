@@ -37,37 +37,109 @@ h1 {
     background-image: linear-gradient(to right, black ,darkblue );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku-base-form:hover {
+    background-position: right ;
+    color: white;
 }
 #goku-red-form {
     background-image: linear-gradient(to right, aqua ,red  );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku-red-form:hover {
+    background-position: right ;
+    color: white;
 }
 #goku-blue-form {
     background-image: linear-gradient(to right, rgb(0, 217, 255) ,rgb(5, 231, 174) );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku--form:hover {
+    background-position: right ;
+    color: white;
 }
 #goku-blue-kaiokenx-form {
     background-image: linear-gradient(to right, rgb(196, 16, 58) ,rgb(9, 183, 210) );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku-blue-kaiokenx-form:hover {
+    background-position: right ;
+    color: white;
 }
 #goku-ultra-instict-form {
     background-image: linear-gradient(to right, black , grey );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku-ultra-instict-form:hover {
+    background-position: right ;
+    color: white;
 }
 #goku-mui-form {
     background-image: linear-gradient(to right,rgb(118, 95, 199), rgb(136, 151, 203) ,rgb(69, 68, 75) );
     padding: 10px;
     color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
 
+}
+#goku-mui-form:hover {
+    background-position: right ;
+    color: white;
 }
 
 #gokuimg {
@@ -78,6 +150,142 @@ h1 {
 
 }
 #gokuimg:hover {
+    outline: 10px solid rgba(5, 5, 90, 0.813);
+    transform: scale(1.05) translateY(0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(rgba (5,5,90,rgba(5, 5, 90, 0.813)), 0.5);
+    z-index: 20;
+}
+
+
+/* VEGITO SECTION HERE  */
+
+
+#vegito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to right, #303845 ,#0f203b);
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.vegito-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 90px;
+    
+    
+}
+
+.vegito-btn button {
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+#vegito-base-form {
+    background-image: linear-gradient(to right, black ,darkblue );
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+
+}
+
+#vegito-base-form:hover {
+    background-position: right ;
+    color: white;
+}
+#vegito-red-form {
+    background-image:linear-gradient(to right, #fea63e,#c73d20,#ffc57b);
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+
+}
+#vegito-red-form:hover {
+    background-position: right ;
+    color: white;
+}
+#vegito-blue-form {
+    background-image: linear-gradient(to right, #b5fdf2,#15e6e5,#aafbf8,#09d7d1);
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+
+}
+#vegito-blue-form:hover {
+    background-position: right ;
+    color: white;
+}
+#vegito-ssj-form {
+    background-image:linear-gradient(to right, #101035,#38100e,#b05c33,#211060 );
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+
+}
+#vegito-ssj-form:hover {
+    background-position: right ;
+    color: white;
+}
+#vegito-ui-form {
+    background-image: linear-gradient(to right, #5558a7,#131550,#b2ffff,#647dc0);
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    background-size: 200% auto;
+    outline: none!important;
+    box-shadow: none!important;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+
+}
+#vegito-ui-form:hover {
+    background-position: right ;
+    color: white;
+}
+
+
+
+#vegitoimg {
+    width: 700px;
+    outline-offset: 20px;
+    transition: all 0.5s;
+  
+
+}
+#vegitoimg:hover {
     outline: 10px solid rgba(5, 5, 90, 0.813);
     transform: scale(1.05) translateY(0.5rem);
     box-shadow: 0 2.5rem 4rem rgba(rgba (5,5,90,rgba(5, 5, 90, 0.813)), 0.5);

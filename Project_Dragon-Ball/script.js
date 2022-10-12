@@ -52,3 +52,55 @@ document.getElementById("goku-ultra-instict-form").addEventListener("click", fun
 document.getElementById("goku-mui-form").addEventListener("click", function () {
     document.getElementById("goku").style = gokumuibg;
   });
+
+
+// VEGITO START HERE 
+
+var gokubg = "background:linear-gradient(to right, #303845 ,#0f203b)"
+var vegitoredbg = "background:linear-gradient(to right, #fea63e,#c73d20,#ffc57b)"
+var vegitobluebg = "background:linear-gradient(to right, #b5fdf2,#15e6e5,#aafbf8,#09d7d1)"
+var vegitossjbg = "background: linear-gradient(to right, #101035,#38100e,#b05c33,#211060 )"
+var vegitouibg = "background:linear-gradient(to right, #5558a7,#131550,#b2ffff,#647dc0)"
+
+
+const vegitoForm = document.getElementById ("vegito-base-form").addEventListener 
+("click", function () {
+    document.getElementById ("vegitoimg").src ="./images/vegito-base-form.jpg"
+});
+document.getElementById ("vegito-red-form").addEventListener 
+("click", function () {
+    document.getElementById ("vegitoimg").src ="./images/vegito-red-form.jpg"
+});
+document.getElementById ("vegito-blue-form").addEventListener 
+("click", function () {
+    document.getElementById ("vegitoimg").src ="./images/vegito-blue-form.jpg"
+});
+document.getElementById ("vegito-ssj-form").addEventListener 
+("click", function () {
+    document.getElementById ("vegitoimg").src ="./images/vegito-ssj-form.jpg"
+});
+// document.getElementById ("vegito-sjj-form").addEventListener ("click", function () {
+//     document.getElementById ("vegitoimg").src ="./images/vegito-ssj-form.jpg"
+// });
+document.getElementById ("vegito-ui-form").addEventListener 
+("click", function () {
+    document.getElementById ("vegitoimg").src ="./images/vegito-ui-form.jpg"
+});
+
+// This is for BACKGROUND OF A PICTURES 
+
+document.getElementById("vegito-base-form").addEventListener("click", function () {
+    document.getElementById("vegito").style = gokubg;
+  });
+document.getElementById("vegito-red-form").addEventListener("click", function () {
+    document.getElementById("vegito").style = vegitoredbg;
+  });
+document.getElementById("vegito-blue-form").addEventListener("click", function () {
+    document.getElementById("vegito").style = vegitobluebg;
+  });
+document.getElementById("vegito-ssj-form").addEventListener("click", function () {
+    document.getElementById("vegito").style = vegitossjbg;
+  });
+document.getElementById("vegito-ui-form").addEventListener("click", function () {
+    document.getElementById("vegito").style = vegitouibg;
+  });
