@@ -223,3 +223,58 @@ else {
 
 
 // I solved This Challenge without help or anything like that so I know how it works 
+
+const inputYear= '1991';
+console.log (Number (inputYear) + 18); // This is the way how we can change from string to number if We want to add up some number to another without this method
+// We will get just exaple 1991 +18 = 199118
+console.log (inputYear +18);
+
+
+//
+
+console.log (Boolean(0));
+console.log (Boolean(undefined));
+console.log (Boolean('Halil'));
+console.log (Boolean({}));
+console.log (Boolean(''));
+
+// Exaple for this 
+
+const money = 0 ;
+
+if (money ) {
+    console.log ("Don't spend it all ")
+}
+else {
+    console.log ("You should get a job ")  // This will show in a console because
+}
+
+//because first statment is false and he will go to the else statment and executed that one 
+// If we have some money exaple money = 100, this will show first beacause it is true 
+
+
+const agE = '18';
+if (age=== 18 ) console.log ('You just became an adult  (strict)');
+
+if (age == 18 ) console.log ('You just became an adult (loose)');
+
+const favourite =Number ( prompt ("What's your favourite number "));
+
+console.log (favourite);
+
+if (favourite === 23 ) {
+    console.log ('Cool 23 is amazing number')
+} 
+else if (favourite === 7 ) {
+    console.log ('7 is also a cool number')
+}
+ else if  (favourite ===9 ) {
+    console.log ('9 is not bad number for student ')
+ }
+
+ else {
+    console.log ("Number is not 23, 7 or 9")
+ }
+
+
+ if (favourite !== 23) console.log ("Why not number 23 ")
