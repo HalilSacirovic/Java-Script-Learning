@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.math {
+    display: flex;
+
+}
+
+.name-1 {
+    margin-right: 20px;
+}
+.name-2 {
+    margin-right: 20px;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 100px;
+}
