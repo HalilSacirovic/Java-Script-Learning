@@ -1,0 +1,19 @@
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#num1 {
+    margin-right: 50px;
+}
+
+#num2 {
+    margin-right: 50px;
+}
+
+#result {
+    background-color: aqua;
+   
+}
