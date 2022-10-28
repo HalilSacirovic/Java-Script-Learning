@@ -1,0 +1,76 @@
+.todo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top , rgb(7, 86, 165) 45%,rgb(4, 189, 146) 100%);
+}
+
+.todo-app {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.title h2 {
+    
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.title p {
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+.favorite-todo input {
+    padding: 5px;
+    width: 310px;
+}
+
+.favorite-todo button {
+    background-color: rgb(150, 73, 223);
+    color: white;   
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.favorite-todo button span {    
+font-weight: bold;
+}
+
+.favorite-todo input::placeholder {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.something {
+    margin-top: 15px;
+    
+}
+.something  p {
+    border: 1px solid rgb(218, 211, 211);
+    background-color: rgb(228, 235, 238);
+    padding: 5px 10px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.tasks {
+   display: inline-block;
+
+}
+
+.tasks span {
+    font-weight: 600;
+}
+
+.tasks button {
+margin-left: 95px;
+background-color: rgb(124, 23, 218);
+border: none;
+color: white;
+border-radius: 2px;
+padding: 5px 10px;
+}
