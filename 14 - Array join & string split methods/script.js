@@ -1,3 +1,5 @@
+'use strict'
+
 /*var arr = ["Muhamed", "Haris", "Davud", "Mustafa"];
 
 // var result = "";
@@ -47,13 +49,14 @@ var charactersInText = loremIpsumText.split(""); // niz svih karaktera u tekstu 
 */
 
 
-
+var i;
 var loremIpsumText =
   "Integer commodo lacus non consectetur gravida. Donec velit nisl, tempor vel rutrum id, gravida sit amet arcu. Aenean lobortis est sed nisi vehicula, ut pellentesque elit tempus. Aenean tristique nisl erat. Sed sit amet dapibus erat. Nam ac purus ante. Nunc non dapibus ligula. Nunc fermentum pharetra consequat. Morbi in nulla metus. Donec sagittis lacinia enim. Cras pulvinar laoreet hendrerit. Sed est mi, viverra vel pellentesque euismod, varius eu mauris. Ut rutrum ipsum dui, a sodales justo porttitor ut. Integer pulvinar est vitae nisl sodales, eu interdum ligula ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos";
 
 var recenice = loremIpsumText.split("."); // niz
 var reci = loremIpsumText.split(" "); // niz
-var slovo=loremIpsumText;
+var karakteri  = loremIpsumText.split("");
+
 
 console.log("Recenice", recenice);
 console.log("Reci", reci);
@@ -61,6 +64,16 @@ console.log("Reci", reci);
 console.log("Dati tekst ima " + recenice.length + " recenica");
 console.log("Dati tekst ima " + reci.length + " reci");
 
-if(slovo !== '' && slovo !== ' ' && slovo !== '.' && slovo !== ',' && slovo !== '!' && slovo !== '?'){
-  console.log("Dati tekst ima " + slovo.length + " slova");
+console.log(karakteri);
+
+var arr = [];
+
+
+
+for (i=0; i>= karakteri.length-1; i++){
+  if(karakteri[i] !== '' && karakteri[i] !== '.' && karakteri[i] !== ',' && karakteri[i] !== '!' && karakteri[i] !== '?'){
+    arr.push(karakteri[i]);
+  }
 }
+
+console.log(arr)
