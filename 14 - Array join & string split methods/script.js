@@ -59,7 +59,7 @@ var karakteri  = loremIpsumText.split("");
 
 
 console.log("Recenice", recenice);
-console.log("Reci", reci);
+console.log("Reci",reci);
 
 console.log("Dati tekst ima " + recenice.length + " recenica");
 console.log("Dati tekst ima " + reci.length + " reci");
@@ -70,8 +70,8 @@ var arr = [];
 
 
 
-for (i=0; i>= karakteri.length-1; i++){
-  if(karakteri[i] !== '' && karakteri[i] !== '.' && karakteri[i] !== ',' && karakteri[i] !== '!' && karakteri[i] !== '?'){
+for (i=0; i<=karakteri.length-1; i++){
+  if(karakteri[i] !== '' && karakteri[i] !== ' ' && karakteri[i] !== '.' && karakteri[i] !== ',' && karakteri[i] !== '!' && karakteri[i] !== '?'){
     arr.push(karakteri[i]);
   }
 }
