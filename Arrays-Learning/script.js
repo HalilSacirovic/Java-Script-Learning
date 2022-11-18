@@ -101,7 +101,7 @@ console.log(arr);
 // console.log (koliko)
 
 
-
+/*
 
 var arr = [2,4,5,7,1,6,8,2,3,8,2,34,8,8,4,12,4,78,34,3,2,1,7,8,2,23,7,8,2,34,78,734,4,2,2,3,7,8,6,5,4,3];
 var i;
@@ -125,3 +125,24 @@ for (i=0;i<=arr.length-2;i++){
 var duzina = indeksi.length;
 
 console.log(duzina,indeksi)
+*/
+
+
+function getPoints (result){
+  var point = 0;
+  
+  for (var i=0;i<result.length;i++){
+    var nzm = result[i];
+    nzm.split(":");
+    var x=nzm;
+    var y= nzm;
+    
+  }
+  
+
+  return point;
+}
+
+var result = getPoints(["3:1","4:3","5:3"])
+
+console.log(result)

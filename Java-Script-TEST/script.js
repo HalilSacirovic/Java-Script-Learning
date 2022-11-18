@@ -1,3 +1,4 @@
+/*
 function divisibleSumPairs( k, ar) {
   var numbersOfPairs = 0;
   var i, j,m;
@@ -18,7 +19,6 @@ var result = divisibleSumPairs(5,[1,2,3,4,5,6]);
 console.log(result)
 
 
-/*
 
 1.Deklarisemo numbersofpairs i stavimo joj vrednost 0
 2.Deklarisemo varijable i,j,m
@@ -31,4 +31,89 @@ console.log(result)
 9.i posle svega toga na kraju koda vracamo vrednost od NUMBERSOFPAIRS.
 10.
 
+
+function checkElementInSubArr(sArr,num){
+  var isElementOk= true;
+  
+}
+
+function PickingNumber(a) {
+  var lengthOfLongestSubArray = 0;
+  
+  for(var  i=0;i<=a.length;i++){
+    var subArr=[];
+    subArr.push(a[i]);
+    for(var j=i+1;j<=a.length-1;j++){
+      var isNumOk=checkElementInSubArr(subArr,a[j])
+    }
+    if(subArr.length>lengthOfLongestSubArray){
+      lengthOfLongestSubArray = subArr.length;
+    }
+  }
+  
+  
+  return lengthOfLongestSubArray;
+}
+
+
+
+var result = PickingNumber([1,2,2,4,5,6,8,8,9,9])
+
+console.log( result)
+
+
+
+
+var i,max=[];
+var arr = [1,2,3,4,5,1,2,5,6,1,2,12,3,123,124,51,25,25]
+
+for(i=0;i<=arr.length-1;i++){
+  if(arr[i]>max){
+    max=arr[i];
+  }
+}
+
+
+
+console.log(max)
+
 */
+
+function checkElementInSubArr(sArr,num){
+  var isElementOk= true;
+  
+  for(var i = 0 ; i<=subArr.length-1;i++){
+    if(Math.abs(subArr[i]-num)>1 ){
+      numIsOk=false;
+    }
+  }
+
+  return isElementOk;
+}
+
+function PickingNumber(a) {
+  var lengthOfLongestSubArray = 0;
+  
+  for(var  i=0;i<=a.length;i++){
+    var subArr=[];
+    subArr.push(a[i]);
+    for(var j=i+1;j<=a.length-1;j++){
+      if(i !== j ){
+        var selectedNumber =a[j];
+        var isNumOk=checkElementInSubArr(subArr,selectedNumber)
+      }
+    }
+    if(subArr.length>lengthOfLongestSubArray){
+      lengthOfLongestSubArray = subArr.length;
+    }
+  }
+  
+  
+  return lengthOfLongestSubArray;
+}
+
+
+
+var result = PickingNumber([1,2,2,4,5,6,8,8,9,9])
+
+console.log( result)
