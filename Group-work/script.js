@@ -136,7 +136,6 @@ function wave(str){
   }
   return wavedStrings
 }
-*/
 
 
 var myName= "halil"
@@ -145,3 +144,63 @@ var nameLetters = myName.split("");
 var reversedLetters=nameLetters.reverse("");
 var myNameRe = reversedLetters.join("");
 console.log("Elhamdu" + myNameRe)
+
+
+
+
+
+function twoOldestAges(ages){
+  var filter =[]
+  for (var i = 0; i <= ages.length - 2; i++) {
+    for (var j = i + 1; j <= ages.length - 1; j++) {
+      if (ages[j] > ages[i]) {
+        var pom = ages[i];
+        ages[i] = ages[j];
+        ages[j] = pom;
+      }
+    }
+  }
+  filter.push(ages[1],ages[0])
+  return filter
+}
+
+
+console.log(twoOldestAges([1,2,5,12,5,13]))
+*/
+
+
+
+
+
+function checkExam(array1, array2) {
+  var counter=0
+ for (var i=0;i<array1.length;i++){
+   if(array2[i]=== ""){
+     continue;
+   }
+   if(array1[i] === array2[i]){
+     counter= counter + 4 ;
+   }
+   else {
+     counter= counter-1 ;
+   }
+ }
+ if(counter > 0 ){
+   return counter;
+ }
+  else{
+    return 0;
+  }
+}
+
+var capitals= function (word){
+  var letters= word.split ("");
+  var filter = []
+
+  for (var i=0;i<letters.length;i++){
+    if (letters[i]=== letters[i].toUpperCase()){
+      filter.push (i);
+    }
+  }
+  return filter
+}
