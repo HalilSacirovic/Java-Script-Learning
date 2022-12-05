@@ -1,7 +1,25 @@
 var grades = []
 
 function calculateSumOfGrades (){
+var sum=0;
+for(var sumFirst of grades){
+  sum+=sumFirst.num
+}
+return sum
 
+
+/*
+
+FOR PETLJA NA FLEX NACIN
+
+var sum=0;
+
+grades.forEach(function (item,index){
+  sum=sum+item.num
+})
+
+*/
+ 
 }
 
 
@@ -32,7 +50,15 @@ grades.push(grade);
 
 
 function sortCurrentArrayOfGrade (){
-
+  for(var firstGrade of grades ) {
+    for (var secondGrade of grades) {
+      if (secondGrade.num>firstGrade.num){
+        var pom=firstGrade;
+        firstGrade=secondGrade;
+        secondGrade=pom
+      }
+    }
+  }
 }
 
 
@@ -48,6 +74,20 @@ for (var i = 0; i<grades.length;i++){
   list.appendChild(listItem)
 
 }
+
+/*
+
+////////////////////////// FOR LOOP
+
+ grades.forEach(function(item,index){
+ var listItem = document.createElement("li");
+  listItem.textContent = item.num + " - " +  item.subject
+  list.appendChild(listItem)
+ })
+
+
+
+*/
 }
 
 
@@ -72,3 +112,6 @@ document.getElementById("addButton").addEventListener("click",function (){
   renderAllGrades();
 
 })
+
+
+
