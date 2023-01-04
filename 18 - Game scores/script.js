@@ -1,3 +1,5 @@
+`use strict`
+
 // var goals = [];
 
 
@@ -93,3 +95,36 @@ class Fijaker {
 var a = new Fijaker("Audi",2012,4.2);
 
 console.log(a)
+
+
+
+
+
+class Auto{
+  constructor(carBrand,model,produtionYear,power){
+    this.carBrand=carBrand;
+    this.model=model
+    this.produtionYear=produtionYear
+    this.power=power
+
+    function calculatedDifferenceBetweenPower() {
+      for (var i=1 ; i<4;i++){
+        if(vehicle_(i).power >vehicle_(i+1).power)
+      {
+        console.log(vehicle_(i))
+      }
+      }
+    }
+   }
+
+}
+
+
+var vehicle_1 = new Auto("Ferrari","F40",1987 + "-" +1998,480);
+var vehicle_2 = new Auto("BMW","M5",2004 + "-" +2009,504);
+var vehicle_3 = new Auto("Audi","S7",2018 + "-" +20+"..",356);
+var vehicle_4 = new Auto("Mercedes","GLE43",2012 + "-" +2018,396);
+
+
+console.log(vehicle_1,vehicle_2,vehicle_3,vehicle_4)
+
