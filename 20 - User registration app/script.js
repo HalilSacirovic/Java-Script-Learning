@@ -35,10 +35,10 @@ class Admin extends User {
 }
 
 class Moderator extends User {
-  constructor(username, password, duty) {
+  constructor(username, password) {
     super(username, password);
     this.privileges = ["read", "write"];
-    this.duty = duty;
+    this.duty = "something";
     this.role = "moderator";
   }
 }
@@ -69,6 +69,7 @@ class UserToDisplay {
     this.createdAt = user.createdAt;
     this.updatedAt = user.updatedAt;
     this.role=user.role
+    this.duty = user.duty
     // this.dateOfShowAll = new Date(); ===> mogu da dodam neke nove property-e ako hocu
   }
 }
@@ -80,6 +81,7 @@ document.getElementById("showAll").addEventListener("click", function () {
   })
   var usersWithoutPassword = users.map(function (user, index) {
     var userNoPass = new UserToDisplay(user);
+    console.log(userNoPass)
    return userNoPass
   });
   document.getElementById("data").innerHTML = JSON.stringify(
