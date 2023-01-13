@@ -18,7 +18,7 @@ function turOnYellow (){
 
 
 function turOnGreen (){
-  document.getElementById("green").style.background = "green";
+  document.getElementById("green").style.background = "lime";
   document.getElementById("yellow").style.background = "transparent";
   document.getElementById("red").style.background = "transparent";
  
