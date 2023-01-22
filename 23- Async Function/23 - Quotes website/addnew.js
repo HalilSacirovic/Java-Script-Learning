@@ -1,5 +1,3 @@
-var arr = [];
-
 document.getElementById("addnew").addEventListener("click", function () {
   var text = document.getElementById("quoteText").value;
   var author = document.getElementById("quoteAuthor").value;
@@ -10,14 +8,6 @@ document.getElementById("addnew").addEventListener("click", function () {
     quoteAuthor: author,
     quoteSource: source,
   };
-
-  document.getElementById("quoteText").value = "";
-  document.getElementById("quoteAuthor").value = "";
-  document.getElementById("quoteSource").value = "";
-  
-  
-
-  arr.push(newQuote);
 
   fetch("https://js-course-server.onrender.com/quotes/add-quote", {
     method: "POST",
@@ -31,23 +21,9 @@ document.getElementById("addnew").addEventListener("click", function () {
       return res.json();
     })
     .then(function (data) {
-      var parent = document.getElementById("test");
-
-      for (var i = 0; i < arr.length; i++) {
-        var child = document.createElement("li");
-        child.textContent =
-          '"' +
-          arr[i].quoteText +
-          '" ' +
-          "     " +
-          arr[i].quoteAuthor +
-          "    " +
-          '"' +
-          arr[i].quoteSource +
-          '"';
-        parent.appendChild(child);
-        console.log(arr)
-        arr = [];
-      }
+      document.getElementById("quoteSource").value = "";
+      document.getElementById("quoteText").value = "";
+      document.getElementById("quoteAuthor").value = "";
+      alert("Vas citat je uspesno dodat");
     });
 });
