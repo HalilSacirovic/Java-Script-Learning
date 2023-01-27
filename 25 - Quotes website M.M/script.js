@@ -1,4 +1,3 @@
-
 var quotes = [];
 var allQuotes = [];
 
@@ -7,7 +6,7 @@ function renderQuotes() {
   parentEl.innerHTML = "";
   quotes.forEach(function (item, index) {
     var childEl = document.createElement("li");
-    childEl.textContent = item.quoteText + " - " + item.quoteAuthor;
+    childEl.textContent = item.quoteText + " - " + item.quoteAuthor +  "\nLikes:" + item.likes;
     parentEl.appendChild(childEl);
   });
 }
