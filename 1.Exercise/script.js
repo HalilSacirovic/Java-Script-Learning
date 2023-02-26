@@ -65,41 +65,61 @@
 // }
 
 
-function returnName(name)
-{
+// function returnName(name)
+// {
  
-    var i;
+//     var i;
 
-    var inicijali
-    var inicijali2
+//     var inicijali
+//     var inicijali2
    
-    var array = name.split("")
+//     var array = name.split("")
 
-    console.log(array)
+//     console.log(array)
 
-    for(i=0;i<array.length;i++){
+//     for(i=0;i<array.length;i++){
      
-      if(array[i] === " ")
-      {
-       inicijali= array[0] +array[i+1];
+//       if(array[i] === " ")
+//       {
+//        inicijali= array[0] +array[i+1];
     
-      }
+//       }
 
 
-      if(array[i] !== " "){
-        inicijali2 = array[0] + array[1];
+//       if(array[i] !== " "){
+//         inicijali2 = array[0] + array[1];
         
-      }
+//       }
       
       
-    }
+//     }
 
     
-}
+// }
 
 
 
 
 
 
-console.log(returnName("Halil Sacirovic"))
+// console.log(returnName("Halil Sacirovic"))
+
+
+
+
+
+
+//https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
+
+
+function addLength(str) {
+  var array = str.split(" ");
+  var array2=[];
+  var i;
+    
+    for(i=0;i<array.length;i++){
+     array2.push(array[i]+ " " + array[i].length) 
+    }
+    return array2
+  }
+  
