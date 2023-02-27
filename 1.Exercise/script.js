@@ -123,3 +123,34 @@ function addLength(str) {
     return array2
   }
   
+
+
+
+
+//https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript 
+
+//////////////////  VEOMA DOBAR ZADATAKKKKK   ///////////////
+
+
+  function getMiddle(s)
+{
+ var array= s.split("");
+
+  
+  if((array.length) % 2 === 0){
+    var twonumm = (array.length)/2;
+
+    
+    var test = array[twonumm-1] + array[twonumm];
+    return test;
+  }else{
+    var oneword = (array.length-1)/2;
+
+    var test2 = array[oneword]
+    
+    return test2
+  }
+}
+
+
+////////////////////////////////////////////////////////////
