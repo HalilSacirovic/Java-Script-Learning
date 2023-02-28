@@ -154,3 +154,47 @@ function addLength(str) {
 
 
 ////////////////////////////////////////////////////////////
+
+
+
+
+// https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/javascript
+
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+ 
+
+  return birds.filter(item => !geese.includes(item));
+};
+
+
+
+
+
+// PITAJ PROFESORA ZA OVAJ DOLE ZADATAK
+
+// https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/train/javascript
+
+
+
+
+
+
+
+//https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript
+
+
+
+var summation = function (num) {
+  
+  
+  var suma=0;
+    
+    for(var i=1;i<=num;i++){
+      suma+=i;
+    }
+  
+    return suma
+  }
+  
