@@ -1,3 +1,6 @@
+'use strict'
+
+
 const bridTvPlayerDiv = document.getElementById('bridTvPlayer');
 const gridContainerDiv = document.getElementById('gridContainer');
 
